@@ -1,0 +1,90 @@
+<html>
+<head></head>
+
+<style>
+
+    #snowglobe{
+         position:absolute;
+         top: 25vmin;
+         left: 25vmin;
+         width: 50vmin;
+         height: 50vmin;
+         border-radius: 50%;
+         border: 5px solid aliceblue;
+         transform-origin: bottom;
+         animation: fadeIN 5s;
+    }
+    @keyframes fadeIN {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    
+    #base{
+        position:absolute;
+        top: 68.5vmin;
+        left: 36vmin;
+        width: 30vmin;
+        height: 20vmin;
+        border-radius: 10px;
+        background-color: aliceblue;
+        transform: perspective(10em) rotateX(40deg);
+        animation: FadeIN 5s;
+    }
+    @keyframes FadeIN{
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    #rect{
+        position: absolute;
+        top:  40vmin;
+        left: 43vmin;
+        width: 15vmin;
+        height: 10vmin;
+        background-color: black;
+        border-radius: 10px;
+        transform: perspective(5em) rotateX(10deg);
+    }
+    #handle1{
+        position: absolute;
+        top: 42vmin;
+        left: 40vmin;
+        width: 6.5vmin;
+        height: 15vmin;
+        border-radius: 15px;
+        background-color: black;
+        transform: perspective(5em) rotateX(-12deg);
+    }
+    #handle2{
+        position: absolute;
+        top: 42vmin;
+        left: 55vmin;
+        width: 6.5vmin;
+        height: 15vmin;
+        border-radius: 15px;
+        background-color: black;
+        transform: perspective(5em) rotateX(-12deg);
+    }
+    #start{
+        print('PRESS START');
+        position: absolute;
+        top: 60vmin;
+        left: 43vmin;
+        width: 15vmin;
+        height:15vmin;
+        background-color: crimson;
+        
+    }
+
+    </style>
+    <body>
+    
+        <div>
+            <div id = "base">
+             <div id = "start"></div></div>
+            <div id = "rect"></div>
+            <div id = "handle1"></div>
+            <div id = "handle2"></div>
+            <div id = "snowglobe"></div>
+        </div>
+    </body>
+</html>
